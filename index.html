@@ -138,29 +138,8 @@
     transition:background .25s, transform .25s;
   }
   .nav-cta:hover{background:var(--rose);transform:translateY(-2px);}
-  .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;z-index:1001;}
-  .burger span{width:26px;height:2px;background:var(--cacao);border-radius:2px;transition:transform .25s ease, opacity .2s ease;}
-  .burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
-  .burger.open span:nth-child(2){opacity:0;}
-  .burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
-
-  .mobile-panel{
-    display:none;position:fixed;top:0;left:0;right:0;bottom:0;
-    background:var(--cream);z-index:999;
-    padding:100px 24px 40px;
-    overflow-y:auto;
-    flex-direction:column;gap:8px;
-  }
-  .mobile-panel.open{display:flex;}
-  .mobile-panel a{
-    display:block;padding:16px 4px;font-size:1.1rem;font-weight:700;
-    border-bottom:1px solid rgba(61,40,23,0.08);color:var(--cacao);
-  }
-  .mobile-panel a.active{color:var(--rose);}
-  .mobile-panel .mobile-cta{
-    margin-top:24px;text-align:center;background:var(--cacao);color:var(--cream);
-    padding:16px;border-radius:30px;font-weight:700;border:none;
-  }
+  .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;}
+  .burger span{width:26px;height:2px;background:var(--cacao);border-radius:2px;}
 
   /* HERO */
   .hero{
@@ -347,14 +326,6 @@
     <a href="contact.html" class="nav-cta">Nous contacter</a>
     <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
   </nav>
-  <div class="mobile-panel" id="mobile-panel">
-    <a href="index.html" class="active">Accueil</a>
-    <a href="patisserie.html">Pâtisserie</a>
-    <a href="coiffure.html">Coiffure</a>
-    <a href="galerie.html">Galerie</a>
-    <a href="apropos.html">À propos</a>
-    <a href="contact.html" class="mobile-cta">Nous contacter</a>
-  </div>
 </header>
 
 <section class="hero">
@@ -478,16 +449,11 @@
 
   // Burger menu (mobile) — ouvre le menu de navigation simple
   document.getElementById('burger').addEventListener('click', () => {
-    document.getElementById('burger').classList.toggle('open');
-    document.getElementById('mobile-panel').classList.toggle('open');
-    document.body.style.overflow = document.getElementById('mobile-panel').classList.contains('open') ? 'hidden' : '';
-  });
-  document.querySelectorAll('#mobile-panel a').forEach(a => {
-    a.addEventListener('click', () => {
-      document.getElementById('burger').classList.remove('open');
-      document.getElementById('mobile-panel').classList.remove('open');
-      document.body.style.overflow = '';
-    });
+    const links = document.querySelector('.nav-links');
+    const cta = document.querySelector('.nav-cta');
+    const isOpen = links.style.display === 'flex';
+    links.style.cssText = isOpen ? '' : 'display:flex;flex-direction:column;position:fixed;top:70px;left:0;right:0;background:#FFF8F0;padding:24px;gap:20px;box-shadow:0 10px 20px rgba(0,0,0,0.08);';
+    cta.style.cssText = isOpen ? '' : 'display:block;position:fixed;top:230px;left:24px;right:24px;text-align:center;';
   });
 
   // Reveal on scroll
