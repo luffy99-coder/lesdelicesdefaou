@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://delicesdefaou.vercel.app/sitemap.xml

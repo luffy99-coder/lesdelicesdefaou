@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Les Délices de Faou — Pâtisserie & Salon de Coiffure à Djougou, Bénin</title>
+<meta name="description" content="Pâtisserie personnalisée (gâteaux d'anniversaire, mariage, shawarmas, mini pizzas) et salon de coiffure à Djougou, Bénin. Commandez ou réservez dès aujourd'hui.">
+<meta name="keywords" content="pâtisserie Djougou, gâteau anniversaire Djougou, gâteau mariage Bénin, coiffure Djougou, salon de coiffure Bénin, shawarma Djougou, mini pizza Djougou, pâtisserie Bénin, tresses Djougou, Les Délices de Faou">
+<meta name="author" content="Les Délices de Faou">
+<meta name="robots" content="index, follow">
+<meta name="language" content="French">
+<meta name="geo.region" content="BJ-DO">
+<meta name="geo.placename" content="Djougou, Donga, Bénin">
+<link rel="canonical" href="https://delicesdefaou.vercel.app/">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+
+<!-- Open Graph / Facebook / WhatsApp -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://delicesdefaou.vercel.app/">
+<meta property="og:title" content="Les Délices de Faou — Pâtisserie & Salon de Coiffure à Djougou">
+<meta property="og:description" content="Gâteaux personnalisés, shawarmas, mini pizzas et coiffures soignées. Deux passions, une même adresse à Djougou, Bénin.">
+<meta property="og:image" content="https://delicesdefaou.vercel.app/logo.png">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Les Délices de Faou">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://delicesdefaou.vercel.app/">
+<meta name="twitter:title" content="Les Délices de Faou — Pâtisserie & Salon de Coiffure à Djougou">
+<meta name="twitter:description" content="Gâteaux personnalisés, shawarmas, mini pizzas et coiffures soignées à Djougou, Bénin.">
+<meta name="twitter:image" content="https://delicesdefaou.vercel.app/logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- JSON-LD Schema.org : LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  "name": "Les Délices de Faou",
+  "image": "https://delicesdefaou.vercel.app/logo.png",
+  "url": "https://delicesdefaou.vercel.app/",
+  "telephone": "+2290190124392",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Djougou",
+    "addressRegion": "Donga",
+    "addressCountry": "BJ"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 9.7085,
+    "longitude": 1.6663
+  },
+  "sameAs": [
+    "https://wa.me/2290190124392"
+  ],
+  "makesOffer": [
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Pâtisserie personnalisée",
+        "description": "Gâteaux sur-mesure, shawarmas, mini pizzas"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Coiffure",
+        "description": "Coiffures, tresses et soins capillaires"
+      }
+    }
+  ]
+}
+</script>
+<style>
+  :root{
+    --cream:#FFF8F0;
+    --cream-deep:#F7ECDD;
+    --cacao:#3D2817;
+    --cacao-soft:#6B4C3A;
+    --rose:#C9184A;
+    --rose-deep:#9D0E38;
+    --gold:#B8860B;
+    --gold-light:#E8C468;
+    --white:#FFFFFF;
+    --shadow: 0 10px 30px rgba(61,40,23,0.12);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Manrope',sans-serif;
+    background:var(--cream);
+    color:var(--cacao);
+    line-height:1.6;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,h4{font-family:'Fraunces',serif;font-weight:600;line-height:1.15;}
+  a{text-decoration:none;color:inherit;}
+  img{max-width:100%;display:block;}
+  .container{max-width:1180px;margin:0 auto;padding:0 24px;}
+
+  /* NAVBAR */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:1000;
+    background:rgba(255,248,240,0.92);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(61,40,23,0.08);
+    transition:box-shadow .3s ease;
+  }
+  header.scrolled{box-shadow:0 4px 20px rgba(61,40,23,0.08);}
+  nav{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:16px 24px;max-width:1180px;margin:0 auto;
+  }
+  .logo{
+    font-family:'Fraunces',serif;font-weight:700;font-size:1.4rem;
+    display:flex;align-items:baseline;gap:6px;
+  }
+  .logo span{color:var(--rose);}
+  .nav-links{display:flex;gap:36px;list-style:none;font-weight:600;font-size:0.95rem;}
+  .nav-links a{position:relative;padding:4px 0;transition:color .2s;}
+  .nav-links a::after{
+    content:'';position:absolute;bottom:-2px;left:0;width:0;height:2px;
+    background:var(--rose);transition:width .3s ease;
+  }
+  .nav-links a:hover{color:var(--rose);}
+  .nav-links a:hover::after{width:100%;}
+  .nav-cta{
+    background:var(--cacao);color:var(--cream);padding:10px 22px;
+    border-radius:30px;font-weight:700;font-size:0.9rem;
+    transition:background .25s, transform .25s;
+  }
+  .nav-cta:hover{background:var(--rose);transform:translateY(-2px);}
+  .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;}
+  .burger span{width:26px;height:2px;background:var(--cacao);border-radius:2px;}
+
+  /* HERO */
+  .hero{
+    padding:150px 24px 80px;
+    position:relative;
+    background:linear-gradient(160deg, rgba(255,248,240,0.94), rgba(255,248,240,0.88)), url('hero.jpg') center/cover no-repeat;
+  }
+  .hero-inner{
+    max-width:1180px;margin:0 auto;text-align:center;
+  }
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:0.8rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;
+    color:var(--gold);margin-bottom:22px;
+  }
+  .eyebrow::before, .eyebrow::after{content:'';width:24px;height:1px;background:var(--gold);}
+  .hero h1{
+    font-size:clamp(2.4rem, 6vw, 4.4rem);
+    color:var(--cacao);margin-bottom:22px;letter-spacing:-0.01em;
+  }
+  .hero h1 em{font-style:italic;color:var(--rose);}
+  .hero p.lead{
+    max-width:560px;margin:0 auto 40px;font-size:1.15rem;color:var(--cacao-soft);
+  }
+
+  /* SPLIT ACTIVITES — élément signature */
+  .split{
+    display:grid;grid-template-columns:1fr 1fr;
+    max-width:1000px;margin:0 auto;border-radius:24px;overflow:hidden;
+    box-shadow:var(--shadow);
+  }
+  .split-card{
+    position:relative;padding:56px 32px;min-height:340px;
+    display:flex;flex-direction:column;justify-content:flex-end;
+    color:var(--white);overflow:hidden;
+    transition:transform .4s ease;
+  }
+  .split-card:hover{transform:scale(1.02);}
+  .split-card.patisserie{background:linear-gradient(160deg, var(--rose) 0%, var(--rose-deep) 100%);}
+  .split-card.coiffure{background:linear-gradient(160deg, var(--cacao) 0%, #241708 100%);}
+  .split-card::before{
+    content:'';position:absolute;inset:0;
+    background:radial-gradient(circle at 80% 20%, rgba(255,255,255,0.15), transparent 60%);
+  }
+  .split-icon{font-size:2.6rem;margin-bottom:14px;}
+  .split-card h3{font-size:1.7rem;color:var(--white);margin-bottom:8px;}
+  .split-card p{font-size:0.95rem;opacity:0.9;margin-bottom:18px;}
+  .split-link{
+    display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:0.9rem;
+    border-bottom:2px solid rgba(255,255,255,0.5);padding-bottom:2px;width:fit-content;
+    transition:border-color .2s;
+  }
+  .split-link:hover{border-color:var(--white);}
+
+  /* SECTION GENERIQUE */
+  section{padding:100px 0;}
+  .section-head{text-align:center;max-width:600px;margin:0 auto 56px;}
+  .section-head .eyebrow{margin-bottom:14px;}
+  .section-head h2{font-size:clamp(1.8rem, 4vw, 2.6rem);}
+  .section-head p{color:var(--cacao-soft);margin-top:14px;}
+
+  /* A PROPOS TEASER */
+  .about{background:var(--cream-deep);}
+  .about-grid{
+    display:grid;grid-template-columns:0.9fr 1.1fr;gap:64px;align-items:center;
+  }
+  .about-visual{
+    aspect-ratio:4/5;border-radius:20px;overflow:hidden;
+    background:linear-gradient(135deg, var(--gold-light), var(--gold));
+    display:flex;align-items:center;justify-content:center;
+    font-family:'Fraunces',serif;font-size:5rem;color:var(--white);
+    box-shadow:var(--shadow);
+  }
+  .about-text h2{font-size:clamp(1.8rem,4vw,2.4rem);margin-bottom:20px;}
+  .about-text p{color:var(--cacao-soft);margin-bottom:16px;}
+  .stats{display:flex;gap:40px;margin-top:32px;}
+  .stat strong{display:block;font-family:'Fraunces',serif;font-size:2rem;color:var(--rose);}
+  .stat span{font-size:0.85rem;color:var(--cacao-soft);}
+
+  /* PRODUITS EN VEDETTE */
+  .featured-grid{
+    display:grid;grid-template-columns:repeat(auto-fit, minmax(240px,1fr));gap:28px;
+  }
+  .product-card{
+    background:var(--white);border-radius:18px;overflow:hidden;
+    box-shadow:0 6px 18px rgba(61,40,23,0.07);
+    transition:transform .3s ease, box-shadow .3s ease;
+  }
+  .product-card:hover{transform:translateY(-6px);box-shadow:var(--shadow);}
+  .product-img{
+    aspect-ratio:4/3;background:var(--cream-deep);
+    display:flex;align-items:center;justify-content:center;
+    color:var(--gold);font-size:2rem;overflow:hidden;
+  }
+  .product-img img{width:100%;height:100%;object-fit:cover;}
+  .product-body{padding:20px 22px 24px;}
+  .product-body .cat{font-size:0.75rem;font-weight:700;color:var(--rose);text-transform:uppercase;letter-spacing:0.06em;}
+  .product-body h4{font-size:1.15rem;margin:8px 0 6px;}
+  .product-body .desc{font-size:0.88rem;color:var(--cacao-soft);margin-bottom:12px;min-height:2.6em;}
+  .product-body .price{font-weight:800;color:var(--cacao);font-size:1.05rem;}
+  .loading-msg, .empty-msg{text-align:center;color:var(--cacao-soft);padding:20px;grid-column:1/-1;}
+
+  /* AVIS */
+  .avis{background:var(--cacao);color:var(--cream);}
+  .avis .section-head h2{color:var(--cream);}
+  .avis .section-head p{color:rgba(255,248,240,0.7);}
+  .avis-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;}
+  .avis-card{
+    background:rgba(255,248,240,0.06);border:1px solid rgba(255,248,240,0.12);
+    border-radius:16px;padding:28px;
+  }
+  .avis-card .stars{color:var(--gold-light);margin-bottom:12px;letter-spacing:2px;}
+  .avis-card p{font-size:0.95rem;color:rgba(255,248,240,0.85);margin-bottom:16px;font-style:italic;}
+  .avis-card .who{font-weight:700;font-size:0.9rem;color:var(--cream);}
+  .avis-card .when{font-size:0.78rem;color:rgba(255,248,240,0.5);}
+
+  /* CTA CONTACT */
+  .cta-band{
+    background:linear-gradient(120deg, var(--rose) 0%, var(--gold) 130%);
+    color:var(--white);text-align:center;padding:80px 24px;
+  }
+  .cta-band h2{color:var(--white);font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:16px;}
+  .cta-band p{max-width:480px;margin:0 auto 32px;opacity:0.95;}
+  .cta-buttons{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
+  .btn{
+    padding:14px 30px;border-radius:30px;font-weight:700;font-size:0.95rem;
+    transition:transform .25s, box-shadow .25s;
+  }
+  .btn-white{background:var(--white);color:var(--rose-deep);}
+  .btn-white:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(0,0,0,0.15);}
+  .btn-outline{border:2px solid var(--white);color:var(--white);}
+  .btn-outline:hover{background:var(--white);color:var(--rose-deep);}
+
+  /* FOOTER */
+  footer{background:#241708;color:rgba(255,248,240,0.7);padding:64px 24px 24px;}
+  .footer-grid{
+    display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;
+    max-width:1180px;margin:0 auto 40px;
+  }
+  .footer-brand .logo{color:var(--cream);margin-bottom:12px;}
+  .footer-brand p{font-size:0.9rem;line-height:1.7;max-width:280px;}
+  .footer-col h5{color:var(--cream);font-size:0.9rem;margin-bottom:16px;letter-spacing:0.04em;text-transform:uppercase;}
+  .footer-col ul{list-style:none;}
+  .footer-col li{margin-bottom:10px;font-size:0.9rem;}
+  .footer-col a:hover{color:var(--gold-light);}
+  .footer-bottom{
+    max-width:1180px;margin:0 auto;padding-top:24px;
+    border-top:1px solid rgba(255,248,240,0.1);
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;
+    font-size:0.82rem;
+  }
+  .footer-bottom a{color:var(--gold-light);font-weight:600;}
+
+  /* REVEAL ANIMATION */
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease, transform .7s ease;}
+  .reveal.visible{opacity:1;transform:translateY(0);}
+
+  /* RESPONSIVE */
+  @media(max-width:860px){
+    .nav-links, .nav-cta{display:none;}
+    .burger{display:flex;}
+    .split{grid-template-columns:1fr;}
+    .about-grid{grid-template-columns:1fr;gap:36px;}
+    .footer-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media(max-width:520px){
+    .footer-grid{grid-template-columns:1fr;}
+    .stats{gap:24px;}
+  }
+</style>
+</head>
+<body>
+
+<header id="site-header">
+  <nav>
+    <a href="index.html" class="logo"><img src="logo.png" alt="Les Délices de Faou" style="height:44px;width:auto;display:block;"></a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Accueil</a></li>
+      <li><a href="patisserie.html">Pâtisserie</a></li>
+      <li><a href="coiffure.html">Coiffure</a></li>
+      <li><a href="galerie.html">Galerie</a></li>
+      <li><a href="apropos.html">À propos</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Nous contacter</a>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-inner reveal">
+    <div class="eyebrow">Djougou, Bénin</div>
+    <h1>Deux passions, <em>une même adresse</em></h1>
+    <p class="lead">Gâteaux sur-mesure, snacks gourmands et coiffures soignées : Les Délices de Faou prend soin de vos papilles et de votre style.</p>
+  </div>
+
+  <div class="split reveal">
+    <a href="patisserie.html" class="split-card patisserie">
+      <div class="split-icon">🎂</div>
+      <h3>Pâtisserie</h3>
+      <p>Gâteaux personnalisés, shawarmas, mini pizzas</p>
+      <span class="split-link">Découvrir la carte →</span>
+    </a>
+    <a href="coiffure.html" class="split-card coiffure">
+      <div class="split-icon">💇🏾‍♀️</div>
+      <h3>Coiffure</h3>
+      <p>Coiffures, tresses et soins capillaires</p>
+      <span class="split-link">Voir les services →</span>
+    </a>
+  </div>
+</section>
+
+<section class="about">
+  <div class="container about-grid">
+    <div class="about-visual reveal">🧁</div>
+    <div class="about-text reveal">
+      <div class="eyebrow">Notre histoire</div>
+      <h2>Faite avec soin, servie avec fierté</h2>
+      <p>Les Délices de Faou est née d'une passion simple : offrir à Djougou des créations pâtissières uniques et des coiffures qui font sourire. Chaque gâteau est personnalisé, chaque coiffure pensée pour vous.</p>
+      <p>Aujourd'hui, nous accompagnons les familles, les entreprises et les événements de la région avec la même exigence de qualité.</p>
+      <div class="stats">
+        <div class="stat"><strong>2</strong><span>Univers réunis</span></div>
+        <div class="stat"><strong>100%</strong><span>Fait sur commande</span></div>
+        <div class="stat"><strong>Djougou</strong><span>Notre ville</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="produits">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Nos créations</div>
+      <h2>Quelques gourmandises du moment</h2>
+      <p>Un avant-goût de notre carte pâtisserie — la sélection complète vous attend sur la page dédiée.</p>
+    </div>
+    <div class="featured-grid reveal" id="produits-grid">
+      <p class="loading-msg">Chargement des créations...</p>
+    </div>
+  </div>
+</section>
+
+<section class="avis">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Ils nous font confiance</div>
+      <h2>La parole à nos clients</h2>
+    </div>
+    <div class="avis-grid reveal" id="avis-grid">
+      <p class="loading-msg">Chargement des avis...</p>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band reveal">
+  <h2>Une envie de gâteau ou de coiffure ?</h2>
+  <p>Contactez-nous dès maintenant, on s'occupe du reste.</p>
+  <div class="cta-buttons">
+    <a href="https://wa.me/2290190124392" class="btn btn-white" target="_blank" rel="noopener">Écrire sur WhatsApp</a>
+    <a href="contact.html" class="btn btn-outline">Voir nos coordonnées</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo"><img src="logo.png" alt="Les Délices de Faou" style="height:40px;width:auto;filter:brightness(0) invert(1);"></div>
+      <p>Pâtisserie personnalisée et salon de coiffure à Djougou. Deux passions, un seul objectif : vous faire plaisir.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Navigation</h5>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="patisserie.html">Pâtisserie</a></li>
+        <li><a href="coiffure.html">Coiffure</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Entreprise</h5>
+      <ul>
+        <li><a href="apropos.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Contact</h5>
+      <ul>
+        <li>Djougou, Donga, Bénin</li>
+        <li><a href="https://wa.me/2290190124392" target="_blank" rel="noopener">WhatsApp</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="year"></span> Les Délices de Faou. Tous droits réservés.</span>
+    <span>Site conçu par <a href="https://wa.me/2290191175358" target="_blank" rel="noopener">DineTech</a></span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Header shadow au scroll
+  const header = document.getElementById('site-header');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 10);
+  });
+
+  // Burger menu (mobile) — ouvre le menu de navigation simple
+  document.getElementById('burger').addEventListener('click', () => {
+    const links = document.querySelector('.nav-links');
+    const cta = document.querySelector('.nav-cta');
+    const isOpen = links.style.display === 'flex';
+    links.style.cssText = isOpen ? '' : 'display:flex;flex-direction:column;position:fixed;top:70px;left:0;right:0;background:#FFF8F0;padding:24px;gap:20px;box-shadow:0 10px 20px rgba(0,0,0,0.08);';
+    cta.style.cssText = isOpen ? '' : 'display:block;position:fixed;top:230px;left:24px;right:24px;text-align:center;';
+  });
+
+  // Reveal on scroll
+  const revealEls = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => observer.observe(el));
+
+  // --- Parsing CSV simple (gère les guillemets) ---
+  function parseCSV(text) {
+    const rows = [];
+    let row = [], field = '', inQuotes = false;
+    for (let i = 0; i < text.length; i++) {
+      const c = text[i], next = text[i+1];
+      if (inQuotes) {
+        if (c === '"' && next === '"') { field += '"'; i++; }
+        else if (c === '"') { inQuotes = false; }
+        else { field += c; }
+      } else {
+        if (c === '"') inQuotes = true;
+        else if (c === ',') { row.push(field); field = ''; }
+        else if (c === '\n') { row.push(field); rows.push(row); row = []; field = ''; }
+        else if (c === '\r') { /* skip */ }
+        else field += c;
+      }
+    }
+    if (field.length || row.length) { row.push(field); rows.push(row); }
+    const headers = rows.shift().map(h => h.trim());
+    return rows.filter(r => r.some(c => c.trim() !== '')).map(r => {
+      const obj = {};
+      headers.forEach((h, i) => obj[h] = (r[i] || '').trim());
+      return obj;
+    });
+  }
+
+  const CSV_PATISSERIE = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRmAgcDmDgHzCIgdMYnAgusXrbWGWBp72vChUm3OMCGo3UP9dejoNuiDp6BHEC-4Ab11wY6pLwx4pZY/pub?gid=0&single=true&output=csv";
+  const CSV_AVIS = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRmAgcDmDgHzCIgdMYnAgusXrbWGWBp72vChUm3OMCGo3UP9dejoNuiDp6BHEC-4Ab11wY6pLwx4pZY/pub?gid=1019892033&single=true&output=csv";
+
+  // Produits en vedette (les 3 premiers de la carte Pâtisserie)
+  fetch(CSV_PATISSERIE)
+    .then(r => r.text())
+    .then(text => {
+      const data = parseCSV(text).slice(0, 3);
+      const grid = document.getElementById('produits-grid');
+      if (!data.length) { grid.innerHTML = '<p class="empty-msg">Aucune création pour le moment.</p>'; return; }
+      grid.innerHTML = data.map(p => `
+        <div class="product-card">
+          <div class="product-img">${p.Image ? `<img src="${p.Image}" alt="${p.Nom}" loading="lazy">` : '🎂'}</div>
+          <div class="product-body">
+            <span class="cat">${p.Categorie || 'Pâtisserie'}</span>
+            <h4>${p.Nom || 'Sans titre'}</h4>
+            <p class="desc">${p.Description || ''}</p>
+            <span class="price">${p.Prix ? p.Prix + ' FCFA' : ''}</span>
+          </div>
+        </div>
+      `).join('');
+    })
+    .catch(() => {
+      document.getElementById('produits-grid').innerHTML = '<p class="empty-msg">Impossible de charger les créations pour le moment.</p>';
+    });
+
+  // Avis clients
+  fetch(CSV_AVIS)
+    .then(r => r.text())
+    .then(text => {
+      const data = parseCSV(text).slice(0, 3);
+      const grid = document.getElementById('avis-grid');
+      if (!data.length) { grid.innerHTML = '<p class="empty-msg">Pas encore d\'avis publiés.</p>'; return; }
+      grid.innerHTML = data.map(a => {
+        const note = parseInt(a.Note) || 5;
+        return `
+        <div class="avis-card">
+          <div class="stars">${'★'.repeat(note)}${'☆'.repeat(5-note)}</div>
+          <p>"${a.Commentaire || ''}"</p>
+          <div class="who">${a.Nom || 'Client'}</div>
+          <div class="when">${a.Date || ''}</div>
+        </div>
+      `}).join('');
+    })
+    .catch(() => {
+      document.getElementById('avis-grid').innerHTML = '<p class="empty-msg">Impossible de charger les avis pour le moment.</p>';
+    });
+</script>
+
+</body>
+</html>
