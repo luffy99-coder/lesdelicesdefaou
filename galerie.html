@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galerie — Nos Réalisations Pâtisserie & Coiffure | Les Délices de Faou, Djougou</title>
+<meta name="description" content="Découvrez en images nos créations pâtisserie et nos coiffures réalisées à Djougou, Bénin. Une galerie qui donne des idées et envie.">
+<meta name="keywords" content="galerie pâtisserie Djougou, photos gâteaux Bénin, réalisations coiffure Djougou, galerie photo salon Bénin">
+<meta name="robots" content="index, follow">
+<meta name="geo.region" content="BJ-DO">
+<meta name="geo.placename" content="Djougou, Donga, Bénin">
+<link rel="canonical" href="https://delicesdefaou.vercel.app/galerie.html">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://delicesdefaou.vercel.app/galerie.html">
+<meta property="og:title" content="Galerie — Les Délices de Faou, Djougou">
+<meta property="og:description" content="Nos plus belles réalisations en pâtisserie et coiffure à Djougou, Bénin.">
+<meta property="og:image" content="https://delicesdefaou.vercel.app/logo.png">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Les Délices de Faou">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Galerie — Les Délices de Faou, Djougou">
+<meta name="twitter:description" content="Nos plus belles réalisations en pâtisserie et coiffure à Djougou, Bénin.">
+<meta name="twitter:image" content="https://delicesdefaou.vercel.app/logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Accueil","item":"https://delicesdefaou.vercel.app/"},
+    {"@type":"ListItem","position":2,"name":"Galerie","item":"https://delicesdefaou.vercel.app/galerie.html"}
+  ]
+}
+</script>
+<style>
+  :root{
+    --cream:#FFF8F0; --cream-deep:#F7ECDD; --cacao:#3D2817; --cacao-soft:#6B4C3A;
+    --rose:#C9184A; --rose-deep:#9D0E38; --gold:#B8860B; --gold-deep:#8A6508; --gold-light:#E8C468;
+    --white:#FFFFFF; --shadow:0 10px 30px rgba(61,40,23,0.12);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Manrope',sans-serif;background:var(--cream);color:var(--cacao);line-height:1.6;overflow-x:hidden;}
+  h1,h2,h3,h4{font-family:'Fraunces',serif;font-weight:600;line-height:1.15;}
+  a{text-decoration:none;color:inherit;}
+  img{max-width:100%;display:block;}
+  .container{max-width:1180px;margin:0 auto;padding:0 24px;}
+
+  header{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,248,240,0.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(61,40,23,0.08);transition:box-shadow .3s ease;}
+  header.scrolled{box-shadow:0 4px 20px rgba(61,40,23,0.08);}
+  nav{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1180px;margin:0 auto;}
+  .logo img{height:44px;width:auto;display:block;}
+  .nav-links{display:flex;gap:36px;list-style:none;font-weight:600;font-size:0.95rem;}
+  .nav-links a{position:relative;padding:4px 0;}
+  .nav-links a.active{color:var(--gold-deep);}
+  .nav-links a::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:2px;background:var(--gold-deep);transition:width .3s ease;}
+  .nav-links a:hover::after,.nav-links a.active::after{width:100%;}
+  .nav-cta{background:var(--cacao);color:var(--cream);padding:10px 22px;border-radius:30px;font-weight:700;font-size:0.9rem;transition:background .25s,transform .25s;}
+  .nav-cta:hover{background:var(--gold-deep);transform:translateY(-2px);}
+
+  .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none;}
+  .burger span{display:block;width:24px;height:2px;background:var(--cacao);border-radius:2px;transition:transform .3s,opacity .3s;}
+  .burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+  .burger.open span:nth-child(2){opacity:0;}
+  .burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+
+  .mobile-panel{display:none;position:fixed;top:70px;left:0;right:0;background:var(--cream);padding:20px 5% 30px;z-index:999;flex-direction:column;gap:4px;box-shadow:0 10px 20px rgba(61,40,23,0.08);}
+  .mobile-panel.open{display:flex;}
+  .mobile-panel a{color:var(--cacao);text-decoration:none;font-size:1rem;font-weight:500;padding:12px 16px;border-radius:6px;transition:background .2s;}
+  .mobile-panel a:hover{background:rgba(61,40,23,0.06);}
+  .mobile-panel a.active{color:var(--gold-deep);}
+  .mobile-panel .mobile-cta{background:var(--cacao) !important;color:var(--cream) !important;text-align:center;margin-top:8px;font-weight:700 !important;border-radius:6px;}
+
+  /* HERO */
+  .hero{
+    padding:150px 24px 70px;position:relative;text-align:center;
+    background:linear-gradient(160deg, rgba(255,248,240,0.94), rgba(255,248,240,0.88)), url('hero.jpg') center/cover no-repeat;
+  }
+  .hero-inner{max-width:700px;margin:0 auto;}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:0.8rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:22px;}
+  .eyebrow::before,.eyebrow::after{content:'';width:24px;height:1px;background:var(--gold-deep);}
+  .hero h1{font-size:clamp(2.2rem,6vw,3.6rem);margin-bottom:16px;color:var(--cacao);}
+  .hero p{font-size:1.05rem;color:var(--cacao-soft);}
+  .breadcrumb{margin-top:20px;font-size:0.85rem;color:var(--cacao-soft);}
+  .breadcrumb a:hover{text-decoration:underline;}
+
+  /* FILTRES */
+  .filters-section{padding:20px 0 0;}
+  .filters{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:48px;}
+  .filter-btn{padding:10px 24px;border-radius:30px;border:2px solid var(--cacao);background:transparent;color:var(--cacao);font-weight:700;font-size:0.9rem;cursor:pointer;transition:all .3s cubic-bezier(.4,0,.2,1);position:relative;overflow:hidden;}
+  .filter-btn::before{content:'';position:absolute;inset:0;background:var(--gold-deep);transform:scaleX(0);transform-origin:left;transition:transform .35s cubic-bezier(.4,0,.2,1);z-index:0;}
+  .filter-btn span{position:relative;z-index:1;transition:color .3s;}
+  .filter-btn:hover::before{transform:scaleX(1);}
+  .filter-btn:hover span{color:var(--white);}
+  .filter-btn.active{background:var(--gold-deep);border-color:var(--gold-deep);color:var(--white);}
+  .filter-btn.active span{color:var(--white);}
+
+  /* MASONRY GALLERY */
+  .gallery-section{padding:0 0 100px;}
+  .masonry{
+    column-count:3;column-gap:20px;
+  }
+  .masonry-item{
+    break-inside:avoid;margin-bottom:20px;border-radius:16px;overflow:hidden;
+    position:relative;cursor:pointer;box-shadow:0 4px 14px rgba(61,40,23,0.08);
+    opacity:0;transform:translateY(30px) scale(0.96);
+    transition:opacity .5s ease, transform .5s ease, box-shadow .3s ease;
+  }
+  .masonry-item.in-view{opacity:1;transform:translateY(0) scale(1);}
+  .masonry-item:hover{box-shadow:0 16px 32px rgba(61,40,23,0.2);}
+  .masonry-item img{width:100%;display:block;transition:transform .5s ease;}
+  .masonry-item:hover img{transform:scale(1.06);}
+  .masonry-item .overlay{
+    position:absolute;inset:0;background:linear-gradient(to top, rgba(61,40,23,0.75), transparent 55%);
+    display:flex;align-items:flex-end;padding:18px;opacity:0;transition:opacity .3s ease;
+  }
+  .masonry-item:hover .overlay{opacity:1;}
+  .masonry-item .overlay-content{color:var(--white);}
+  .masonry-item .overlay-cat{font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--gold-light);}
+  .masonry-item .overlay-title{font-family:'Fraunces',serif;font-size:1.05rem;margin-top:4px;}
+  .placeholder-tile{
+    aspect-ratio:1;background:linear-gradient(135deg,var(--cream-deep),var(--gold-light));
+    display:flex;align-items:center;justify-content:center;font-size:2.4rem;border-radius:16px;margin-bottom:20px;
+  }
+  .empty-msg,.loading-msg{text-align:center;color:var(--cacao-soft);padding:60px 20px;grid-column:1/-1;}
+
+  @media(max-width:900px){ .masonry{column-count:2;} }
+  @media(max-width:520px){ .masonry{column-count:1;} }
+
+  /* CTA */
+  .cta-band{background:linear-gradient(120deg,var(--gold-deep) 0%,var(--rose) 130%);color:var(--white);text-align:center;padding:80px 24px;}
+  .cta-band h2{color:var(--white);font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:16px;}
+  .cta-band p{max-width:480px;margin:0 auto 32px;opacity:0.95;}
+  .btn{padding:14px 30px;border-radius:30px;font-weight:700;font-size:0.95rem;display:inline-block;transition:transform .25s,box-shadow .25s;}
+  .btn-white{background:var(--white);color:var(--gold-deep);}
+  .btn-white:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 10px 24px rgba(0,0,0,0.15);}
+
+  /* LIGHTBOX */
+  .lightbox{
+    position:fixed;inset:0;background:rgba(20,12,6,0.95);z-index:3000;
+    display:flex;align-items:center;justify-content:center;
+    opacity:0;pointer-events:none;transition:opacity .3s ease;
+  }
+  .lightbox.open{opacity:1;pointer-events:auto;}
+  .lightbox-content{
+    max-width:90vw;max-height:85vh;position:relative;
+    transform:scale(0.9);transition:transform .3s ease;
+  }
+  .lightbox.open .lightbox-content{transform:scale(1);}
+  .lightbox-content img{max-width:90vw;max-height:75vh;border-radius:12px;object-fit:contain;}
+  .lightbox-caption{color:var(--white);text-align:center;margin-top:16px;}
+  .lightbox-caption .cat{font-size:0.75rem;color:var(--gold-light);text-transform:uppercase;letter-spacing:0.06em;font-weight:700;}
+  .lightbox-caption .title{font-family:'Fraunces',serif;font-size:1.3rem;margin-top:6px;}
+  .lightbox-close{position:fixed;top:24px;right:24px;background:rgba(255,255,255,0.1);border:none;color:var(--white);width:46px;height:46px;border-radius:50%;font-size:1.4rem;cursor:pointer;transition:background .2s;z-index:10;}
+  .lightbox-close:hover{background:rgba(255,255,255,0.2);}
+  .lightbox-nav{position:fixed;top:50%;transform:translateY(-50%);background:rgba(255,255,255,0.1);border:none;color:var(--white);width:52px;height:52px;border-radius:50%;font-size:1.6rem;cursor:pointer;transition:background .2s;z-index:10;}
+  .lightbox-nav:hover{background:rgba(255,255,255,0.2);}
+  .lightbox-prev{left:20px;}
+  .lightbox-next{right:20px;}
+  @media(max-width:600px){
+    .lightbox-nav{width:42px;height:42px;font-size:1.3rem;}
+    .lightbox-prev{left:8px;}
+    .lightbox-next{right:8px;}
+  }
+
+  footer{background:#241708;color:rgba(255,248,240,0.7);padding:64px 24px 24px;}
+  .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;max-width:1180px;margin:0 auto 40px;}
+  .footer-brand img{height:40px;margin-bottom:12px;filter:brightness(0) invert(1);}
+  .footer-brand p{font-size:0.9rem;line-height:1.7;max-width:280px;}
+  .footer-col h5{color:var(--cream);font-size:0.9rem;margin-bottom:16px;letter-spacing:0.04em;text-transform:uppercase;}
+  .footer-col ul{list-style:none;}
+  .footer-col li{margin-bottom:10px;font-size:0.9rem;}
+  .footer-col a:hover{color:var(--gold-light);}
+  .footer-bottom{max-width:1180px;margin:0 auto;padding-top:24px;border-top:1px solid rgba(255,248,240,0.1);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:0.82rem;}
+  .footer-bottom a{color:var(--gold-light);font-weight:600;}
+
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease;}
+  .reveal.visible{opacity:1;transform:translateY(0);}
+
+  @media(max-width:860px){
+    .nav-links,.nav-cta{display:none;}
+    .burger{display:flex;}
+    .footer-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media(max-width:520px){
+    .footer-grid{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+
+<header id="site-header">
+  <nav>
+    <a href="index.html" class="logo"><img src="logo.png" alt="Les Délices de Faou"></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="patisserie.html">Pâtisserie</a></li>
+      <li><a href="coiffure.html">Coiffure</a></li>
+      <li><a href="galerie.html" class="active">Galerie</a></li>
+      <li><a href="apropos.html">À propos</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Nous contacter</a>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="mobile-panel" id="mobile-panel">
+    <a href="index.html">Accueil</a>
+    <a href="patisserie.html">Pâtisserie</a>
+    <a href="coiffure.html">Coiffure</a>
+    <a href="galerie.html" class="active">Galerie</a>
+    <a href="apropos.html">À propos</a>
+    <a href="contact.html" class="mobile-cta">Nous contacter</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">En images</div>
+    <h1>Nos plus belles réalisations</h1>
+    <p>Gâteaux, coiffures et créations du quotidien — un aperçu de notre savoir-faire à Djougou.</p>
+  </div>
+  <div class="breadcrumb"><a href="index.html">Accueil</a> / Galerie</div>
+</section>
+
+<section class="filters-section">
+  <div class="container">
+    <div class="filters reveal" id="filters">
+      <button class="filter-btn active" data-filter="Tous"><span>Tous</span></button>
+    </div>
+  </div>
+</section>
+
+<section class="gallery-section">
+  <div class="container">
+    <div class="masonry" id="masonry-grid">
+      <div class="placeholder-tile">🖼️</div>
+      <div class="placeholder-tile">🖼️</div>
+      <div class="placeholder-tile">🖼️</div>
+      <div class="placeholder-tile">🖼️</div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band reveal">
+  <h2>Une envie particulière après ce que vous avez vu ?</h2>
+  <p>Contactez-nous directement pour donner vie à votre projet.</p>
+  <a href="https://wa.me/2290190124392" class="btn btn-white" target="_blank" rel="noopener">Discuter sur WhatsApp</a>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="logo.png" alt="Les Délices de Faou">
+      <p>Pâtisserie personnalisée et salon de coiffure à Djougou. Deux passions, un seul objectif : vous faire plaisir.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Navigation</h5>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="patisserie.html">Pâtisserie</a></li>
+        <li><a href="coiffure.html">Coiffure</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Entreprise</h5>
+      <ul>
+        <li><a href="apropos.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Contact</h5>
+      <ul>
+        <li>Djougou, Donga, Bénin</li>
+        <li><a href="https://wa.me/2290190124392" target="_blank" rel="noopener">WhatsApp</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="year"></span> Les Délices de Faou. Tous droits réservés.</span>
+    <span>Site conçu par <a href="https://wa.me/2290191175358" target="_blank" rel="noopener">DineTech</a></span>
+  </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightbox-close">✕</button>
+  <button class="lightbox-nav lightbox-prev" id="lightbox-prev">‹</button>
+  <button class="lightbox-nav lightbox-next" id="lightbox-next">›</button>
+  <div class="lightbox-content">
+    <img id="lightbox-img" src="" alt="">
+    <div class="lightbox-caption">
+      <div class="cat" id="lightbox-cat"></div>
+      <div class="title" id="lightbox-title"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+const header = document.getElementById('site-header');
+window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 10));
+
+const burger = document.getElementById('burger');
+const mobileMenu = document.getElementById('mobile-panel');
+burger.addEventListener('click', () => {
+  const isOpen = burger.classList.toggle('open');
+  mobileMenu.classList.toggle('open', isOpen);
+});
+mobileMenu.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    burger.classList.remove('open');
+    mobileMenu.classList.remove('open');
+  });
+});
+
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObserver.unobserve(e.target); } });
+}, { threshold: 0.15 });
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+function parseCSV(text) {
+  const rows = [];
+  let row = [], field = '', inQuotes = false;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i], next = text[i+1];
+    if (inQuotes) {
+      if (c === '"' && next === '"') { field += '"'; i++; }
+      else if (c === '"') { inQuotes = false; }
+      else { field += c; }
+    } else {
+      if (c === '"') inQuotes = true;
+      else if (c === ',') { row.push(field); field = ''; }
+      else if (c === '\n') { row.push(field); rows.push(row); row = []; field = ''; }
+      else if (c === '\r') { /* skip */ }
+      else field += c;
+    }
+  }
+  if (field.length || row.length) { row.push(field); rows.push(row); }
+  const headers = rows.shift().map(h => h.trim());
+  return rows.filter(r => r.some(c => c.trim() !== '')).map(r => {
+    const obj = {};
+    headers.forEach((h, i) => obj[h] = (r[i] || '').trim());
+    return obj;
+  });
+}
+
+const CSV_GALERIE = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRmAgcDmDgHzCIgdMYnAgusXrbWGWBp72vChUm3OMCGo3UP9dejoNuiDp6BHEC-4Ab11wY6pLwx4pZY/pub?gid=1936165445&single=true&output=csv";
+
+let allPhotos = [];
+let currentIndex = 0;
+let currentList = [];
+
+function renderGallery(list) {
+  const grid = document.getElementById('masonry-grid');
+  if (!list.length) { grid.innerHTML = '<p class="empty-msg">Aucune photo dans cette catégorie pour le moment.</p>'; return; }
+  currentList = list;
+  grid.innerHTML = list.map((p, i) => `
+    <div class="masonry-item" data-index="${i}" style="transition-delay:${(i % 8) * 50}ms">
+      ${p.Image ? `<img src="${p.Image}" alt="${p.Titre || 'Réalisation'}" loading="lazy">` : ''}
+      <div class="overlay">
+        <div class="overlay-content">
+          <div class="overlay-cat">${p.Categorie || ''}</div>
+          <div class="overlay-title">${p.Titre || ''}</div>
+        </div>
+      </div>
+    </div>
+  `).join('');
+
+  grid.querySelectorAll('.masonry-item').forEach(item => {
+    item.addEventListener('click', () => openLightbox(parseInt(item.dataset.index)));
+  });
+
+  const itemObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in-view'); itemObserver.unobserve(e.target); } });
+  }, { threshold: 0.05 });
+  grid.querySelectorAll('.masonry-item').forEach(it => itemObserver.observe(it));
+}
+
+function buildFilters(photos) {
+  const cats = ['Tous', ...new Set(photos.map(p => p.Categorie).filter(Boolean))];
+  const wrap = document.getElementById('filters');
+  wrap.innerHTML = cats.map(c => `<button class="filter-btn${c === 'Tous' ? ' active' : ''}" data-filter="${c}"><span>${c}</span></button>`).join('');
+  wrap.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      wrap.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      const filtered = filter === 'Tous' ? allPhotos : allPhotos.filter(p => p.Categorie === filter);
+      renderGallery(filtered);
+    });
+  });
+}
+
+function openLightbox(index) {
+  currentIndex = index;
+  updateLightbox();
+  document.getElementById('lightbox').classList.add('open');
+}
+function updateLightbox() {
+  const p = currentList[currentIndex];
+  if (!p) return;
+  document.getElementById('lightbox-img').src = p.Image || '';
+  document.getElementById('lightbox-img').alt = p.Titre || '';
+  document.getElementById('lightbox-cat').textContent = p.Categorie || '';
+  document.getElementById('lightbox-title').textContent = p.Titre || '';
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('open');
+}
+function nextPhoto() { currentIndex = (currentIndex + 1) % currentList.length; updateLightbox(); }
+function prevPhoto() { currentIndex = (currentIndex - 1 + currentList.length) % currentList.length; updateLightbox(); }
+
+document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+document.getElementById('lightbox-next').addEventListener('click', nextPhoto);
+document.getElementById('lightbox-prev').addEventListener('click', prevPhoto);
+document.getElementById('lightbox').addEventListener('click', (e) => { if (e.target.id === 'lightbox') closeLightbox(); });
+document.addEventListener('keydown', (e) => {
+  if (!document.getElementById('lightbox').classList.contains('open')) return;
+  if (e.key === 'Escape') closeLightbox();
+  if (e.key === 'ArrowRight') nextPhoto();
+  if (e.key === 'ArrowLeft') prevPhoto();
+});
+
+/* Swipe mobile */
+let touchStartX = 0;
+const lightboxEl = document.getElementById('lightbox');
+lightboxEl.addEventListener('touchstart', (e) => { touchStartX = e.changedTouches[0].screenX; });
+lightboxEl.addEventListener('touchend', (e) => {
+  const touchEndX = e.changedTouches[0].screenX;
+  const diff = touchEndX - touchStartX;
+  if (Math.abs(diff) > 50) { diff > 0 ? prevPhoto() : nextPhoto(); }
+});
+
+fetch(CSV_GALERIE)
+  .then(r => r.text())
+  .then(text => {
+    allPhotos = parseCSV(text);
+    buildFilters(allPhotos);
+    renderGallery(allPhotos);
+  })
+  .catch(() => {
+    document.getElementById('masonry-grid').innerHTML = '<p class="empty-msg">Impossible de charger la galerie pour le moment. Réessayez plus tard.</p>';
+  });
+</script>
+
+</body>
+</html>
