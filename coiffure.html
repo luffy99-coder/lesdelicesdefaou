@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coiffure — Tresses, Soins & Coiffures | Les Délices de Faou, Djougou</title>
+<meta name="description" content="Salon de coiffure à Djougou : tresses, coiffures et soins capillaires. Découvrez nos services et réservez sur WhatsApp.">
+<meta name="keywords" content="coiffure Djougou, salon de coiffure Bénin, tresses Djougou, tresses africaines Bénin, coiffeuse Djougou, soins capillaires Bénin">
+<meta name="robots" content="index, follow">
+<meta name="geo.region" content="BJ-DO">
+<meta name="geo.placename" content="Djougou, Donga, Bénin">
+<link rel="canonical" href="https://delicesdefaou.vercel.app/coiffure.html">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://delicesdefaou.vercel.app/coiffure.html">
+<meta property="og:title" content="Coiffure — Les Délices de Faou, Djougou">
+<meta property="og:description" content="Tresses, coiffures et soins capillaires à Djougou. Réservez dès maintenant.">
+<meta property="og:image" content="https://delicesdefaou.vercel.app/logo.png">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Les Délices de Faou">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Coiffure — Les Délices de Faou, Djougou">
+<meta name="twitter:description" content="Tresses, coiffures et soins capillaires à Djougou.">
+<meta name="twitter:image" content="https://delicesdefaou.vercel.app/logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Accueil","item":"https://delicesdefaou.vercel.app/"},
+    {"@type":"ListItem","position":2,"name":"Coiffure","item":"https://delicesdefaou.vercel.app/coiffure.html"}
+  ]
+}
+</script>
+<style>
+  :root{
+    --cream:#FFF8F0; --cream-deep:#F7ECDD; --cacao:#3D2817; --cacao-soft:#6B4C3A;
+    --rose:#C9184A; --gold:#B8860B; --gold-deep:#8A6508; --gold-light:#E8C468;
+    --white:#FFFFFF; --shadow:0 10px 30px rgba(61,40,23,0.12);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Manrope',sans-serif;background:var(--cream);color:var(--cacao);line-height:1.6;overflow-x:hidden;}
+  h1,h2,h3,h4{font-family:'Fraunces',serif;font-weight:600;line-height:1.15;}
+  a{text-decoration:none;color:inherit;}
+  img{max-width:100%;display:block;}
+  .container{max-width:1180px;margin:0 auto;padding:0 24px;}
+
+  header{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,248,240,0.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(61,40,23,0.08);transition:box-shadow .3s ease;}
+  header.scrolled{box-shadow:0 4px 20px rgba(61,40,23,0.08);}
+  nav{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1180px;margin:0 auto;}
+  .logo img{height:44px;width:auto;display:block;}
+  .nav-links{display:flex;gap:36px;list-style:none;font-weight:600;font-size:0.95rem;}
+  .nav-links a{position:relative;padding:4px 0;}
+  .nav-links a.active{color:var(--gold-deep);}
+  .nav-links a::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:2px;background:var(--gold-deep);transition:width .3s ease;}
+  .nav-links a:hover::after,.nav-links a.active::after{width:100%;}
+  .nav-cta{background:var(--cacao);color:var(--cream);padding:10px 22px;border-radius:30px;font-weight:700;font-size:0.9rem;transition:background .25s,transform .25s;}
+  .nav-cta:hover{background:var(--gold-deep);transform:translateY(-2px);}
+  .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;}
+  .burger span{width:26px;height:2px;background:var(--cacao);border-radius:2px;}
+
+  /* HERO */
+  .hero{
+    position:relative;padding:160px 24px 90px;overflow:hidden;
+    background:linear-gradient(160deg, rgba(61,40,23,0.88) 0%, rgba(36,23,8,0.92) 100%), url('heroc.jpg') center/cover no-repeat;
+    color:var(--white);text-align:center;
+  }
+  .hero-particles{position:absolute;inset:0;pointer-events:none;overflow:hidden;}
+  .particle{position:absolute;font-size:1.6rem;opacity:0.2;will-change:transform;}
+  .hero-inner{position:relative;z-index:2;max-width:700px;margin:0 auto;}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:0.8rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold-light);margin-bottom:22px;}
+  .eyebrow::before,.eyebrow::after{content:'';width:24px;height:1px;background:var(--gold-light);}
+  .hero h1{font-size:clamp(2.2rem,6vw,3.8rem);margin-bottom:18px;}
+  .hero p{font-size:1.1rem;opacity:0.92;}
+  .breadcrumb{position:relative;z-index:2;margin-top:24px;font-size:0.85rem;opacity:0.8;}
+  .breadcrumb a:hover{text-decoration:underline;}
+
+  /* FILTRES */
+  .filters-section{padding:60px 0 0;}
+  .filters{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:48px;}
+  .filter-btn{
+    padding:10px 24px;border-radius:30px;border:2px solid var(--cacao);
+    background:transparent;color:var(--cacao);font-weight:700;font-size:0.9rem;
+    cursor:pointer;transition:all .3s cubic-bezier(.4,0,.2,1);position:relative;overflow:hidden;
+  }
+  .filter-btn::before{content:'';position:absolute;inset:0;background:var(--gold-deep);transform:scaleX(0);transform-origin:left;transition:transform .35s cubic-bezier(.4,0,.2,1);z-index:0;}
+  .filter-btn span{position:relative;z-index:1;transition:color .3s;}
+  .filter-btn:hover::before{transform:scaleX(1);}
+  .filter-btn:hover span{color:var(--white);}
+  .filter-btn.active{background:var(--gold-deep);border-color:var(--gold-deep);color:var(--white);}
+  .filter-btn.active span{color:var(--white);}
+
+  /* GRID SERVICES avec tilt 3D */
+  .products-section{padding:0 0 100px;}
+  .products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:32px;perspective:1200px;}
+  .product-card{
+    background:var(--white);border-radius:20px;overflow:hidden;box-shadow:0 6px 18px rgba(61,40,23,0.08);
+    transform-style:preserve-3d;transition:transform .15s ease-out,box-shadow .3s ease,opacity .5s ease;
+    cursor:pointer;opacity:0;transform:translateY(40px) scale(0.94);
+  }
+  .product-card.in-view{opacity:1;transform:translateY(0) scale(1);}
+  .product-card:hover{box-shadow:0 20px 40px rgba(61,40,23,0.18);}
+  .product-img{aspect-ratio:4/3;background:linear-gradient(135deg,var(--cream-deep),var(--gold-light));display:flex;align-items:center;justify-content:center;font-size:3rem;overflow:hidden;position:relative;}
+  .product-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease;}
+  .product-card:hover .product-img img{transform:scale(1.08);}
+  .product-img .badge{position:absolute;top:14px;right:14px;background:var(--gold-deep);color:var(--white);font-size:0.72rem;font-weight:800;padding:5px 12px;border-radius:20px;text-transform:uppercase;letter-spacing:0.04em;}
+  .product-img .duree-badge{position:absolute;top:14px;left:14px;background:rgba(61,40,23,0.85);color:var(--cream);font-size:0.72rem;font-weight:700;padding:5px 12px;border-radius:20px;display:flex;align-items:center;gap:4px;}
+  .product-body{padding:22px 24px 26px;}
+  .product-body .cat{font-size:0.75rem;font-weight:700;color:var(--gold-deep);text-transform:uppercase;letter-spacing:0.06em;}
+  .product-body h4{font-size:1.2rem;margin:8px 0 6px;}
+  .product-body .desc{font-size:0.88rem;color:var(--cacao-soft);margin-bottom:14px;min-height:2.6em;}
+  .product-body .foot{display:flex;justify-content:space-between;align-items:center;}
+  .product-body .price{font-weight:800;color:var(--cacao);font-size:1.1rem;}
+  .order-btn{background:var(--cacao);color:var(--cream);border:none;padding:9px 18px;border-radius:20px;font-weight:700;font-size:0.82rem;cursor:pointer;transition:background .25s,transform .2s;}
+  .order-btn:hover{background:var(--gold-deep);transform:translateY(-2px);}
+  .empty-msg,.loading-msg{text-align:center;color:var(--cacao-soft);padding:40px;grid-column:1/-1;}
+  .skeleton{background:linear-gradient(90deg,var(--cream-deep) 25%,#fff 50%,var(--cream-deep) 75%);background-size:200% 100%;animation:shimmer 1.4s infinite;border-radius:20px;height:340px;}
+  @keyframes shimmer{0%{background-position:200% 0;}100%{background-position:-200% 0;}}
+
+  /* COMPTEURS */
+  .stats-band{background:var(--cacao);padding:64px 24px;}
+  .stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:800px;margin:0 auto;text-align:center;}
+  .stat-item strong{display:block;font-family:'Fraunces',serif;font-size:clamp(2rem,5vw,3rem);color:var(--gold-light);}
+  .stat-item span{color:rgba(255,248,240,0.75);font-size:0.9rem;}
+
+  /* CTA */
+  .cta-band{background:linear-gradient(120deg, var(--gold-deep) 0%, var(--cacao) 130%);color:var(--white);text-align:center;padding:80px 24px;}
+  .cta-band h2{color:var(--white);font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:16px;}
+  .cta-band p{max-width:480px;margin:0 auto 32px;opacity:0.95;}
+  .btn{padding:14px 30px;border-radius:30px;font-weight:700;font-size:0.95rem;display:inline-block;transition:transform .25s,box-shadow .25s;}
+  .btn-white{background:var(--white);color:var(--gold-deep);}
+  .btn-white:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 10px 24px rgba(0,0,0,0.15);}
+
+  /* MODAL */
+  .modal-overlay{position:fixed;inset:0;background:rgba(61,40,23,0.6);backdrop-filter:blur(4px);z-index:2000;display:flex;align-items:center;justify-content:center;padding:24px;opacity:0;pointer-events:none;transition:opacity .3s ease;}
+  .modal-overlay.open{opacity:1;pointer-events:auto;}
+  .modal-box{background:var(--white);border-radius:24px;max-width:480px;width:100%;overflow:hidden;transform:scale(0.85) translateY(30px);transition:transform .35s cubic-bezier(.34,1.56,.64,1);box-shadow:0 30px 60px rgba(0,0,0,0.3);position:relative;}
+  .modal-overlay.open .modal-box{transform:scale(1) translateY(0);}
+  .modal-img{aspect-ratio:16/10;background:linear-gradient(135deg,var(--cream-deep),var(--gold-light));display:flex;align-items:center;justify-content:center;font-size:4rem;overflow:hidden;}
+  .modal-img img{width:100%;height:100%;object-fit:cover;}
+  .modal-content{padding:28px 30px 32px;}
+  .modal-content .cat{color:var(--gold-deep);font-weight:700;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.06em;}
+  .modal-content h3{font-size:1.5rem;margin:10px 0 12px;}
+  .modal-content p{color:var(--cacao-soft);margin-bottom:14px;}
+  .modal-meta{display:flex;gap:20px;margin-bottom:20px;}
+  .modal-meta div{font-size:0.85rem;color:var(--cacao-soft);}
+  .modal-meta strong{display:block;color:var(--cacao);font-size:1.1rem;}
+  .modal-close{position:absolute;top:16px;right:16px;background:rgba(255,255,255,0.9);border:none;width:36px;height:36px;border-radius:50%;font-size:1.2rem;cursor:pointer;transition:background .2s;z-index:5;}
+  .modal-close:hover{background:var(--white);}
+  .modal-actions{display:flex;gap:12px;}
+  .modal-actions a{flex:1;text-align:center;background:var(--gold-deep);color:var(--white);}
+
+  footer{background:#241708;color:rgba(255,248,240,0.7);padding:64px 24px 24px;}
+  .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;max-width:1180px;margin:0 auto 40px;}
+  .footer-brand img{height:40px;margin-bottom:12px;filter:brightness(0) invert(1);}
+  .footer-brand p{font-size:0.9rem;line-height:1.7;max-width:280px;}
+  .footer-col h5{color:var(--cream);font-size:0.9rem;margin-bottom:16px;letter-spacing:0.04em;text-transform:uppercase;}
+  .footer-col ul{list-style:none;}
+  .footer-col li{margin-bottom:10px;font-size:0.9rem;}
+  .footer-col a:hover{color:var(--gold-light);}
+  .footer-bottom{max-width:1180px;margin:0 auto;padding-top:24px;border-top:1px solid rgba(255,248,240,0.1);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:0.82rem;}
+  .footer-bottom a{color:var(--gold-light);font-weight:600;}
+
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease;}
+  .reveal.visible{opacity:1;transform:translateY(0);}
+
+  @media(max-width:860px){
+    .nav-links,.nav-cta{display:none;}
+    .burger{display:flex;}
+    .footer-grid{grid-template-columns:1fr 1fr;}
+    .stats-grid{grid-template-columns:1fr;gap:36px;}
+  }
+  @media(max-width:520px){
+    .footer-grid{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+
+<header id="site-header">
+  <nav>
+    <a href="index.html" class="logo"><img src="logo.png" alt="Les Délices de Faou"></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="patisserie.html">Pâtisserie</a></li>
+      <li><a href="coiffure.html" class="active">Coiffure</a></li>
+      <li><a href="galerie.html">Galerie</a></li>
+      <li><a href="apropos.html">À propos</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Nous contacter</a>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<section class="hero" id="hero">
+  <div class="hero-particles" id="particles"></div>
+  <div class="hero-inner">
+    <div class="eyebrow">Nos services</div>
+    <h1>Sublimez votre style</h1>
+    <p>Tresses, coiffures et soins capillaires réalisés avec précision — pour chaque occasion, chaque style, chaque personnalité.</p>
+  </div>
+  <div class="breadcrumb"><a href="index.html">Accueil</a> / Coiffure</div>
+</section>
+
+<section class="filters-section">
+  <div class="container">
+    <div class="filters reveal" id="filters">
+      <button class="filter-btn active" data-filter="Tous"><span>Tous</span></button>
+    </div>
+  </div>
+</section>
+
+<section class="products-section">
+  <div class="container">
+    <div class="products-grid" id="products-grid">
+      <div class="skeleton"></div>
+      <div class="skeleton"></div>
+      <div class="skeleton"></div>
+    </div>
+  </div>
+</section>
+
+<div class="stats-band">
+  <div class="stats-grid">
+    <div class="stat-item"><strong class="counter" data-target="100">0</strong><span>% Personnalisé</span></div>
+    <div class="stat-item"><strong class="counter" data-target="30">0</strong><span>Minutes en moyenne / soin rapide</span></div>
+    <div class="stat-item"><strong class="counter" data-target="5">0</strong><span>Ans d'expérience</span></div>
+  </div>
+</div>
+
+<div class="cta-band reveal">
+  <h2>Envie d'une nouvelle tête ?</h2>
+  <p>Réservez votre créneau dès maintenant, on prend soin de vous.</p>
+  <a href="https://wa.me/2290190124392" class="btn btn-white" target="_blank" rel="noopener">Réserver sur WhatsApp</a>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <img src="logo.png" alt="Les Délices de Faou">
+      <p>Pâtisserie personnalisée et salon de coiffure à Djougou. Deux passions, un seul objectif : vous faire plaisir.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Navigation</h5>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="patisserie.html">Pâtisserie</a></li>
+        <li><a href="coiffure.html">Coiffure</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Entreprise</h5>
+      <ul>
+        <li><a href="apropos.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Contact</h5>
+      <ul>
+        <li>Djougou, Donga, Bénin</li>
+        <li><a href="https://wa.me/2290190124392" target="_blank" rel="noopener">WhatsApp</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="year"></span> Les Délices de Faou. Tous droits réservés.</span>
+    <span>Site conçu par <a href="https://wa.me/2290191175358" target="_blank" rel="noopener">DineTech</a></span>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal">
+  <div class="modal-box">
+    <button class="modal-close" id="modal-close">✕</button>
+    <div class="modal-img" id="modal-img">💇🏾‍♀️</div>
+    <div class="modal-content">
+      <span class="cat" id="modal-cat"></span>
+      <h3 id="modal-title"></h3>
+      <p id="modal-desc"></p>
+      <div class="modal-meta">
+        <div><strong id="modal-duree">—</strong>Durée</div>
+        <div><strong id="modal-price">—</strong>Prix</div>
+      </div>
+      <div class="modal-actions">
+        <a href="#" id="modal-order" class="btn" target="_blank" rel="noopener">Réserver</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+const header = document.getElementById('site-header');
+window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 10));
+
+document.getElementById('burger').addEventListener('click', () => {
+  const links = document.querySelector('.nav-links');
+  const cta = document.querySelector('.nav-cta');
+  const isOpen = links.style.display === 'flex';
+  links.style.cssText = isOpen ? '' : 'display:flex;flex-direction:column;position:fixed;top:70px;left:0;right:0;background:#FFF8F0;padding:24px;gap:20px;box-shadow:0 10px 20px rgba(0,0,0,0.08);';
+  cta.style.cssText = isOpen ? '' : 'display:block;position:fixed;top:230px;left:24px;right:24px;text-align:center;';
+});
+
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObserver.unobserve(e.target); } });
+}, { threshold: 0.15 });
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+/* Particules — ciseaux, peignes, étoiles */
+const icons = ['✨','💇🏾‍♀️','💫','🌸','✂️'];
+const particlesWrap = document.getElementById('particles');
+for (let i = 0; i < 14; i++) {
+  const p = document.createElement('div');
+  p.className = 'particle';
+  p.textContent = icons[Math.floor(Math.random() * icons.length)];
+  p.style.left = Math.random() * 100 + '%';
+  p.style.top = Math.random() * 100 + '%';
+  p.style.fontSize = (1 + Math.random() * 1.8) + 'rem';
+  particlesWrap.appendChild(p);
+  const speed = 20 + Math.random() * 30;
+  const amplitude = 15 + Math.random() * 25;
+  const phase = Math.random() * Math.PI * 2;
+  p.animData = { speed, amplitude, phase };
+}
+let t0 = performance.now();
+function animateParticles(now) {
+  const elapsed = (now - t0) / 1000;
+  particlesWrap.querySelectorAll('.particle').forEach(p => {
+    const { speed, amplitude, phase } = p.animData;
+    const y = Math.sin(elapsed * (Math.PI * 2 / speed) + phase) * amplitude;
+    const x = Math.cos(elapsed * (Math.PI * 2 / (speed * 1.4)) + phase) * (amplitude * 0.6);
+    p.style.transform = `translate(${x}px, ${y}px)`;
+  });
+  requestAnimationFrame(animateParticles);
+}
+requestAnimationFrame(animateParticles);
+
+window.addEventListener('scroll', () => {
+  const offset = window.scrollY;
+  if (offset < window.innerHeight) particlesWrap.style.transform = `translateY(${offset * 0.3}px)`;
+});
+
+const counters = document.querySelectorAll('.counter');
+const counterObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const el = entry.target;
+      const target = parseInt(el.dataset.target);
+      const duration = 1400;
+      const start = performance.now();
+      function tick(now) {
+        const progress = Math.min((now - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        el.textContent = Math.round(eased * target);
+        if (progress < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+      counterObserver.unobserve(el);
+    }
+  });
+}, { threshold: 0.5 });
+counters.forEach(c => counterObserver.observe(c));
+
+function parseCSV(text) {
+  const rows = [];
+  let row = [], field = '', inQuotes = false;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i], next = text[i+1];
+    if (inQuotes) {
+      if (c === '"' && next === '"') { field += '"'; i++; }
+      else if (c === '"') { inQuotes = false; }
+      else { field += c; }
+    } else {
+      if (c === '"') inQuotes = true;
+      else if (c === ',') { row.push(field); field = ''; }
+      else if (c === '\n') { row.push(field); rows.push(row); row = []; field = ''; }
+      else if (c === '\r') { /* skip */ }
+      else field += c;
+    }
+  }
+  if (field.length || row.length) { row.push(field); rows.push(row); }
+  const headers = rows.shift().map(h => h.trim());
+  return rows.filter(r => r.some(c => c.trim() !== '')).map(r => {
+    const obj = {};
+    headers.forEach((h, i) => obj[h] = (r[i] || '').trim());
+    return obj;
+  });
+}
+
+const CSV_COIFFURE = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRmAgcDmDgHzCIgdMYnAgusXrbWGWBp72vChUm3OMCGo3UP9dejoNuiDp6BHEC-4Ab11wY6pLwx4pZY/pub?gid=522818330&single=true&output=csv";
+const WA_NUMBER = "2290190124392";
+
+let allServices = [];
+
+function renderServices(list) {
+  const grid = document.getElementById('products-grid');
+  if (!list.length) { grid.innerHTML = '<p class="empty-msg">Aucun service dans cette catégorie pour le moment.</p>'; return; }
+  grid.innerHTML = list.map((p, i) => `
+    <div class="product-card" data-index="${i}" style="transition-delay:${(i % 6) * 60}ms">
+      <div class="product-img">
+        ${p.Image ? `<img src="${p.Image}" alt="${p.Nom}" loading="lazy">` : '💇🏾‍♀️'}
+        <span class="badge">${p.Categorie || 'Coiffure'}</span>
+        ${p.Duree ? `<span class="duree-badge">⏱ ${p.Duree}</span>` : ''}
+      </div>
+      <div class="product-body">
+        <span class="cat">${p.Categorie || 'Coiffure'}</span>
+        <h4>${p.Nom || 'Sans titre'}</h4>
+        <p class="desc">${p.Description || ''}</p>
+        <div class="foot">
+          <span class="price">${p.Prix ? p.Prix + ' FCFA' : 'Sur devis'}</span>
+          <button class="order-btn" data-index="${i}">Voir</button>
+        </div>
+      </div>
+    </div>
+  `).join('');
+
+  grid.querySelectorAll('.product-card').forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left, y = e.clientY - rect.top;
+      const rotateX = ((y / rect.height) - 0.5) * -10;
+      const rotateY = ((x / rect.width) - 0.5) * 10;
+      card.style.transform = `translateY(-4px) scale(1.015) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+    });
+    card.addEventListener('mouseleave', () => { card.style.transform = ''; });
+    card.addEventListener('click', () => openModal(parseInt(card.dataset.index)));
+  });
+
+  const cardObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in-view'); cardObserver.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  grid.querySelectorAll('.product-card').forEach(c => cardObserver.observe(c));
+}
+
+function buildFilters(services) {
+  const cats = ['Tous', ...new Set(services.map(p => p.Categorie).filter(Boolean))];
+  const wrap = document.getElementById('filters');
+  wrap.innerHTML = cats.map(c => `<button class="filter-btn${c === 'Tous' ? ' active' : ''}" data-filter="${c}"><span>${c}</span></button>`).join('');
+  wrap.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      wrap.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      const filtered = filter === 'Tous' ? allServices : allServices.filter(p => p.Categorie === filter);
+      renderServices(filtered);
+    });
+  });
+}
+
+function openModal(index) {
+  const p = allServices[index];
+  if (!p) return;
+  document.getElementById('modal-img').innerHTML = p.Image ? `<img src="${p.Image}" alt="${p.Nom}">` : '💇🏾‍♀️';
+  document.getElementById('modal-cat').textContent = p.Categorie || 'Coiffure';
+  document.getElementById('modal-title').textContent = p.Nom || 'Sans titre';
+  document.getElementById('modal-desc').textContent = p.Description || '';
+  document.getElementById('modal-duree').textContent = p.Duree || '—';
+  document.getElementById('modal-price').textContent = p.Prix ? p.Prix + ' FCFA' : 'Sur devis';
+  document.getElementById('modal-order').href = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent('Bonjour, je souhaite réserver : ' + p.Nom)}`;
+  document.getElementById('modal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeModal() {
+  document.getElementById('modal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.getElementById('modal-close').addEventListener('click', closeModal);
+document.getElementById('modal').addEventListener('click', (e) => { if (e.target.id === 'modal') closeModal(); });
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+
+fetch(CSV_COIFFURE)
+  .then(r => r.text())
+  .then(text => {
+    allServices = parseCSV(text);
+    buildFilters(allServices);
+    renderServices(allServices);
+  })
+  .catch(() => {
+    document.getElementById('products-grid').innerHTML = '<p class="empty-msg">Impossible de charger les services pour le moment. Réessayez plus tard.</p>';
+  });
+</script>
+
+</body>
+</html>
